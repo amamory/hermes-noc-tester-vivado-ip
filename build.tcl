@@ -77,7 +77,7 @@ set_property -name "simulator_language" -value "Mixed" -objects $obj
 set_property -name "webtalk.xsim_launch_sim" -value "102" -objects $obj
 
 # set path to custom IPs
-set_property  ip_repo_paths ./ips [current_project]
+set_property  ip_repo_paths ./hw/ips [current_project]
 update_ip_catalog
 
 
@@ -116,19 +116,13 @@ foreach hdl_file $hdl_files {
   set_property -name "file_type" -value $hdl_type -objects $file_obj
 }
 
-# Import IP-XACT config file if this exists
-# TODO perhaps it is possible to group this type of files with the other sources_1 above
-set ip_files [glob -nocomplain -directory $origin_dir/hw/component/ "*.xml"]
-# it supports only one IP per design
-if {[llength $ip_files] == 1} {
-  set file "[file normalize "$ip_files"]"
-  puts $file
+# Import IP-XACT config files if they exist
+set ip_files [glob -nocomplain -directory $origin_dir/hw/ips/ "*.xml"]
+foreach ip_file $ip_files {
+  set file "[file normalize "$ip_file"]"
   add_files -quiet -fileset sources_1 $file
   set file_obj [get_files -of_objects [get_filesets sources_1] $file]
   set_property -name "file_type" -value "IP-XACT" -objects $file_obj
-} elseif {[llength $ip_files] > 1} {
-  puts "ERROR: multiple IP-XACT files found. The script only supports one script per design"
-  return
 }
 
 

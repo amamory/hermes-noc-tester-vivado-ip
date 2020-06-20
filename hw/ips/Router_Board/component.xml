@@ -363,50 +363,50 @@
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../xdc/freq.xdc</spirit:name>
+        <spirit:name>../../xdc/freq.xdc</spirit:name>
         <spirit:userFileType>xdc</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../xdc/pin.xdc</spirit:name>
+        <spirit:name>../../xdc/pin.xdc</spirit:name>
         <spirit:userFileType>xdc</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../hdl/HeMPS_defaults.vhd</spirit:name>
+        <spirit:name>../../hdl/HeMPS_defaults.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>work</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../hdl/Hermes_buffer.vhd</spirit:name>
+        <spirit:name>../../hdl/Hermes_buffer.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>work</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../hdl/RouterCC.vhd</spirit:name>
+        <spirit:name>../../hdl/RouterCC.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>work</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../hdl/Router_Sink.vhd</spirit:name>
+        <spirit:name>../../hdl/Router_Sink.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>work</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../hdl/Router_Source.vhd</spirit:name>
+        <spirit:name>../../hdl/Router_Source.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>work</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../hdl/Hermes_crossbar.vhd</spirit:name>
+        <spirit:name>../../hdl/Hermes_crossbar.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>work</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../hdl/Hermes_switchcontrol.vhd</spirit:name>
+        <spirit:name>../../hdl/Hermes_switchcontrol.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>work</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../hdl/Router_Board.vhd</spirit:name>
+        <spirit:name>../../hdl/Router_Board.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>CHECKSUM_fab832c9</spirit:userFileType>
         <spirit:logicalName>work</spirit:logicalName>
@@ -415,42 +415,42 @@
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../hdl/HeMPS_defaults.vhd</spirit:name>
+        <spirit:name>../../hdl/HeMPS_defaults.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>work</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../hdl/Hermes_buffer.vhd</spirit:name>
+        <spirit:name>../../hdl/Hermes_buffer.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>work</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../hdl/RouterCC.vhd</spirit:name>
+        <spirit:name>../../hdl/RouterCC.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>work</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../hdl/Router_Sink.vhd</spirit:name>
+        <spirit:name>../../hdl/Router_Sink.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>work</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../hdl/Router_Source.vhd</spirit:name>
+        <spirit:name>../../hdl/Router_Source.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>work</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../hdl/Hermes_crossbar.vhd</spirit:name>
+        <spirit:name>../../hdl/Hermes_crossbar.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>work</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../hdl/Hermes_switchcontrol.vhd</spirit:name>
+        <spirit:name>../../hdl/Hermes_switchcontrol.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>work</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../hdl/Router_Board.vhd</spirit:name>
+        <spirit:name>../../hdl/Router_Board.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:logicalName>work</spirit:logicalName>
       </spirit:file>
@@ -467,18 +467,18 @@
     <spirit:fileSet>
       <spirit:name>xilinx_testbench_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../hdl/sim/tb.vhd</spirit:name>
+        <spirit:name>../../hdl/sim/tb.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
         <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
         <spirit:logicalName>work</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../hdl/sim/tb_behav.wcfg</spirit:name>
+        <spirit:name>../../hdl/sim/tb_behav.wcfg</spirit:name>
         <spirit:fileType>unknown</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../hdl/sim/tb_time_syn.wcfg</spirit:name>
+        <spirit:name>../../hdl/sim/tb_time_syn.wcfg</spirit:name>
         <spirit:fileType>unknown</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
