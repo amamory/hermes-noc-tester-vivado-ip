@@ -42,4 +42,4 @@ if {[llength $app_list] != 0} {
     puts "==================================="
 }
 
-close_design
+close_design -quiet

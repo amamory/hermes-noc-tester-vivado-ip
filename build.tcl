@@ -97,7 +97,6 @@ puts $hdl_files
 
 foreach hdl_file $hdl_files {
   set file "[file normalize "$hdl_file"]"
-  puts $file
   add_files -quiet -fileset sources_1 $file
   set file_obj [get_files -of_objects [get_filesets sources_1] $file]
   set extension [string tolower [file extension $file]]
@@ -117,7 +116,7 @@ foreach hdl_file $hdl_files {
 }
 
 # Import IP-XACT config files if they exist
-set ip_files [glob -nocomplain -directory $origin_dir/hw/ips/ "*.xml"]
+set ip_files [glob -nocomplain -directory $origin_dir/hw/ips/ "**/*.xml"]
 foreach ip_file $ip_files {
   set file "[file normalize "$ip_file"]"
   add_files -quiet -fileset sources_1 $file

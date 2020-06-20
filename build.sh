@@ -8,11 +8,11 @@ if [ -f $VIVADO ]; then
   echo "###################################"
   $VIVADO -mode batch -source build.tcl
   echo "#########################"
-  echo "### Writing bitstream ###"
+  echo "######## Synthesis ######"
   echo "#########################"
   $VIVADO -mode batch -source build_bitstream_export_sdk.tcl
   # check whether there is any software to be compiled, i.e., if there is any dir inside src/
-  list_dirs=`ls -d ./src/*/`
+  list_dirs=`ls -d ./src/*/ 2> /dev/null`
   # build a bash list 
   has_software=($list_dirs)
   # check if len(list) > 0
