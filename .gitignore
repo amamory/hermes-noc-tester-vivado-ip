@@ -1,3 +1,7 @@
+# Vivado
+*.log
+*.jou
+
 # Prerequisites
 *.d
 

@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_time_impl.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="9000000001fs"></ZoomEndTime>
+      <Cursor1Time time="7576318000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="156"></NameColumnWidth>
+      <ValueColumnWidth column_width="83"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="6" />
+   <wvobject type="logic" fp_name="/tb/clock">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/dip_i">
+      <obj_property name="ElementShortName">dip_i[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dip_i[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/send_i">
+      <obj_property name="ElementShortName">send_i[3:0]</obj_property>
+      <obj_property name="ObjectShortName">send_i[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/led_o">
+      <obj_property name="ElementShortName">led_o[3:0]</obj_property>
+      <obj_property name="ObjectShortName">led_o[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group302">
+      <obj_property name="label">Source to Master</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="group" fp_name="group40">
+         <obj_property name="label">Source_E</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/tb/router/source_E/valid_o">
+            <obj_property name="ElementShortName">valid_o</obj_property>
+            <obj_property name="ObjectShortName">valid_o</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb/router/source_E/data_o">
+            <obj_property name="ElementShortName">data_o[15:0]</obj_property>
+            <obj_property name="ObjectShortName">data_o[15:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb/router/source_E/ready_i">
+            <obj_property name="ElementShortName">ready_i</obj_property>
+            <obj_property name="ObjectShortName">ready_i</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb/router/source_E/send_i">
+            <obj_property name="ElementShortName">send_i</obj_property>
+            <obj_property name="ObjectShortName">send_i</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb/end_i">
+            <obj_property name="ElementShortName">end_i</obj_property>
+            <obj_property name="ObjectShortName">end_i</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb/router/source_E/state">
+            <obj_property name="ElementShortName">state[2:0]</obj_property>
+            <obj_property name="ObjectShortName">state[2:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group115">
+         <obj_property name="label">Source_W</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject type="logic" fp_name="/tb/router/source_W/valid_o">
+            <obj_property name="ElementShortName">valid_o</obj_property>
+            <obj_property name="ObjectShortName">valid_o</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb/router/source_W/data_o">
+            <obj_property name="ElementShortName">data_o[15:0]</obj_property>
+            <obj_property name="ObjectShortName">data_o[15:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb/router/source_W/ready_i">
+            <obj_property name="ElementShortName">ready_i</obj_property>
+            <obj_property name="ObjectShortName">ready_i</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb/router/source_W/end_i">
+            <obj_property name="ElementShortName">end_i</obj_property>
+            <obj_property name="ObjectShortName">end_i</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb/router/source_W/send_i">
+            <obj_property name="ElementShortName">send_i</obj_property>
+            <obj_property name="ObjectShortName">send_i</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group294">
+         <obj_property name="label">Source_N</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject type="logic" fp_name="/tb/router/source_N/valid_o">
+            <obj_property name="ElementShortName">valid_o</obj_property>
+            <obj_property name="ObjectShortName">valid_o</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb/router/source_N/data_o">
+            <obj_property name="ElementShortName">data_o[15:0]</obj_property>
+            <obj_property name="ObjectShortName">data_o[15:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb/router/source_N/ready_i">
+            <obj_property name="ElementShortName">ready_i</obj_property>
+            <obj_property name="ObjectShortName">ready_i</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb/router/source_N/dip_i">
+            <obj_property name="ElementShortName">dip_i[7:0]</obj_property>
+            <obj_property name="ObjectShortName">dip_i[7:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb/router/source_N/end_i">
+            <obj_property name="ElementShortName">end_i</obj_property>
+            <obj_property name="ObjectShortName">end_i</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb/router/source_N/send_i">
+            <obj_property name="ElementShortName">send_i</obj_property>
+            <obj_property name="ObjectShortName">send_i</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group301">
+         <obj_property name="label">Source_S</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject type="logic" fp_name="/tb/router/source_S/valid_o">
+            <obj_property name="ElementShortName">valid_o</obj_property>
+            <obj_property name="ObjectShortName">valid_o</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb/router/source_S/data_o">
+            <obj_property name="ElementShortName">data_o[15:0]</obj_property>
+            <obj_property name="ObjectShortName">data_o[15:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb/router/source_S/ready_i">
+            <obj_property name="ElementShortName">ready_i</obj_property>
+            <obj_property name="ObjectShortName">ready_i</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb/router/source_S/dip_i">
+            <obj_property name="ElementShortName">dip_i[7:0]</obj_property>
+            <obj_property name="ObjectShortName">dip_i[7:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb/router/source_S/end_i">
+            <obj_property name="ElementShortName">end_i</obj_property>
+            <obj_property name="ObjectShortName">end_i</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb/router/source_S/send_i">
+            <obj_property name="ElementShortName">send_i</obj_property>
+            <obj_property name="ObjectShortName">send_i</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group46">
+         <obj_property name="label">m_L</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject type="logic" fp_name="/tb/router/txL_o">
+            <obj_property name="ElementShortName">txL_o</obj_property>
+            <obj_property name="ObjectShortName">txL_o</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb/router/dataL_o">
+            <obj_property name="ElementShortName">dataL_o[31:0]</obj_property>
+            <obj_property name="ObjectShortName">dataL_o[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb/router/creditL_i">
+            <obj_property name="ElementShortName">creditL_i</obj_property>
+            <obj_property name="ObjectShortName">creditL_i</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group57">
+         <obj_property name="label">East_port</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="array" fp_name="/tb/router/router/FEast/EA">
+            <obj_property name="ElementShortName">EA[2:0]</obj_property>
+            <obj_property name="ObjectShortName">EA[2:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb/router/router/FEast/first">
+            <obj_property name="ElementShortName">first[1:0]</obj_property>
+            <obj_property name="ObjectShortName">first[1:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb/router/router/FEast/last">
+            <obj_property name="ElementShortName">last[1:0]</obj_property>
+            <obj_property name="ObjectShortName">last[1:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb/router/router/FEast/counter_flit">
+            <obj_property name="ElementShortName">counter_flit[15:0]</obj_property>
+            <obj_property name="ObjectShortName">counter_flit[15:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb/router/router/FEast/tem_espaco_i_1_n_0">
+            <obj_property name="ElementShortName">tem_espaco_i_1_n_0</obj_property>
+            <obj_property name="ObjectShortName">tem_espaco_i_1_n_0</obj_property>
+         </wvobject>
+         <wvobject type="vbus" fp_name="vbus132">
+            <obj_property name="label">EA</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/tb/router/router/FEast/\u_ila_0_EA[2] ">
+               <obj_property name="ElementShortName">\u_ila_0_EA[2] </obj_property>
+               <obj_property name="ObjectShortName">\u_ila_0_EA[2] </obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/tb/router/router/FEast/\u_ila_0_EA[1] ">
+               <obj_property name="ElementShortName">\u_ila_0_EA[1] </obj_property>
+               <obj_property name="ObjectShortName">\u_ila_0_EA[1] </obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/tb/router/router/FEast/\u_ila_0_EA[0] ">
+               <obj_property name="ElementShortName">\u_ila_0_EA[0] </obj_property>
+               <obj_property name="ObjectShortName">\u_ila_0_EA[0] </obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb/router/router/FEast/h">
+            <obj_property name="ElementShortName">h</obj_property>
+            <obj_property name="ObjectShortName">h</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb/router/router/SwitchControl/h[0]">
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="ElementShortName">[0]</obj_property>
+            <obj_property name="ObjectShortName">[0]</obj_property>
+            <obj_property name="label">h[0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb/router/router/SwitchControl/ack_h[0]">
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="ElementShortName">[0]</obj_property>
+            <obj_property name="ObjectShortName">[0]</obj_property>
+            <obj_property name="label">ack_h[0]</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group303">
+      <obj_property name="label">Slave to Sink</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="group" fp_name="group47">
+         <obj_property name="label">s_L</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject type="logic" fp_name="/tb/router/rxL_i">
+            <obj_property name="ElementShortName">rxL_i</obj_property>
+            <obj_property name="ObjectShortName">rxL_i</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb/router/dataL_i">
+            <obj_property name="ElementShortName">dataL_i[31:0]</obj_property>
+            <obj_property name="ObjectShortName">dataL_i[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb/router/creditL_o">
+            <obj_property name="ElementShortName">creditL_o</obj_property>
+            <obj_property name="ObjectShortName">creditL_o</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group68">
+         <obj_property name="label">Local_port</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/tb/router/router/FLocal/data_av">
+            <obj_property name="ElementShortName">data_av</obj_property>
+            <obj_property name="ObjectShortName">data_av</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb/router/router/FLocal/data">
+            <obj_property name="ElementShortName">data[15:0]</obj_property>
+            <obj_property name="ObjectShortName">data[15:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb/router/router/FLocal/EA">
+            <obj_property name="ElementShortName">EA[2:0]</obj_property>
+            <obj_property name="ObjectShortName">EA[2:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb/router/router/FLocal/first">
+            <obj_property name="ElementShortName">first[1:0]</obj_property>
+            <obj_property name="ObjectShortName">first[1:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb/router/router/FLocal/last">
+            <obj_property name="ElementShortName">last[1:0]</obj_property>
+            <obj_property name="ObjectShortName">last[1:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb/router/router/FLocal/counter_flit">
+            <obj_property name="ElementShortName">counter_flit[15:0]</obj_property>
+            <obj_property name="ObjectShortName">counter_flit[15:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb/router/router/SwitchControl/h[4]">
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="ElementShortName">[4]</obj_property>
+            <obj_property name="ObjectShortName">[4]</obj_property>
+            <obj_property name="label">h[4]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb/router/router/SwitchControl/ack_h[4]">
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="ElementShortName">[4]</obj_property>
+            <obj_property name="ObjectShortName">[4]</obj_property>
+            <obj_property name="label">ack_h[4]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group45">
+         <obj_property name="label">Sink_E</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/tb/router/sink_E/valid_i">
+            <obj_property name="ElementShortName">valid_i</obj_property>
+            <obj_property name="ObjectShortName">valid_i</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb/router/sink_E/data_i">
+            <obj_property name="ElementShortName">data_i[15:0]</obj_property>
+            <obj_property name="ObjectShortName">data_i[15:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb/router/sink_E/ready_o">
+            <obj_property name="ElementShortName">ready_o</obj_property>
+            <obj_property name="ObjectShortName">ready_o</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb/router/sink_E/led_cnt">
+            <obj_property name="ElementShortName">led_cnt[28:0]</obj_property>
+            <obj_property name="ObjectShortName">led_cnt[28:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb/router/sink_E/state">
+            <obj_property name="ElementShortName">state</obj_property>
+            <obj_property name="ObjectShortName">state</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb/router/sink_E/led_o">
+            <obj_property name="ElementShortName">led_o</obj_property>
+            <obj_property name="ObjectShortName">led_o</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group121">
+         <obj_property name="label">Sink_W</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/tb/router/sink_W/valid_i">
+            <obj_property name="ElementShortName">valid_i</obj_property>
+            <obj_property name="ObjectShortName">valid_i</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb/router/sink_W/data_i">
+            <obj_property name="ElementShortName">data_i[15:0]</obj_property>
+            <obj_property name="ObjectShortName">data_i[15:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb/router/sink_W/ready_o">
+            <obj_property name="ElementShortName">ready_o</obj_property>
+            <obj_property name="ObjectShortName">ready_o</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb/router/sink_W/u_ila_0_state">
+            <obj_property name="ElementShortName">u_ila_0_state</obj_property>
+            <obj_property name="ObjectShortName">u_ila_0_state</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb/router/sink_W/led_o">
+            <obj_property name="ElementShortName">led_o</obj_property>
+            <obj_property name="ObjectShortName">led_o</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>
