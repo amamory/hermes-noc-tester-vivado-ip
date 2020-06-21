@@ -18,14 +18,14 @@ if {[string first $version_required $vivado_dir] == -1} {
 }
 
 if { ![info exists env(VIVADO_DESIGN_NAME)] } {
-    puts "Please set the environment variable VIVADO_DESIGN_NAME before running the script"
+    puts "ERROR: Please set the environment variable VIVADO_DESIGN_NAME before running the script"
     return
 }
 set design_name $::env(VIVADO_DESIGN_NAME)
 puts "Using design name: ${design_name}"
 
 if { ![info exists env(VIVADO_TOP_NAME)] } {
-    puts "No top design defined. Using the default top name ${design_name}_wrapper"
+    puts "WARNING: No top design defined. Using the default top name ${design_name}_wrapper"
     set top_name ${design_name}_wrapper
 } else {
   set top_name $::env(VIVADO_TOP_NAME)
@@ -86,10 +86,11 @@ if {[string equal [get_filesets -quiet sources_1] ""]} {
   create_fileset -srcset sources_1
 }
 
+
 # Set 'sources_1' fileset properties
 set obj [get_filesets sources_1]
+set_property "top" "${top_name}" $obj
 
-set_property "top" "Router_Board" $obj
 
 # Insert all the vhdl, sv, and verilog source files from ./hw/hdl into the project
 set hdl_files [glob -nocomplain -directory $origin_dir/hw/hdl/ *{*.vhd,*.v,*.sv}*]
@@ -116,6 +117,15 @@ foreach hdl_file $hdl_files {
 }
 
 # Import IP-XACT config files if they exist
+#  There are two situations where there will be subdirs inside hw/ips/:
+#    - this project is an IP project: In this case, the component.xml file 
+#      will be in hw/ips/<ip-name>/component.xml and this search will find 
+#      the xml files
+#    - this project is using a custom IP: In this case, the subdirs inside 
+#      hw/ips/<ip-name> will be a git submodule of an IP repo. This structure 
+#      is required when the command 
+#          'generate_target all [get_files ${design_name}.bd]'
+#      is executed to regenerate the IP's output products
 set ip_files [glob -nocomplain -directory $origin_dir/hw/ips/ "**/*.xml"]
 foreach ip_file $ip_files {
   set file "[file normalize "$ip_file"]"
@@ -231,7 +241,7 @@ if {[llength $block_files] == 1} {
   # Create and empty block design
   create_bd_design $design_name
   current_bd_design $design_name
-  source $block_file
+  source $block_files
   create_root_design ""
 
   # Generate the wrapper
@@ -252,5 +262,7 @@ if {[llength $block_files] == 1} {
   close_bd_design [current_bd_design]
   open_bd_design [get_files ${design_name}.bd]
   validate_bd_design -force
+  # generate target for IPs, includig the custom IPs
+  generate_target all [get_files ${design_name}.bd]
   save_bd_design
 }
